@@ -36,7 +36,7 @@ class ReplyClient(discord.Client):
         # as long as the sleep_switch is off
         if self.sleep_switch == 0:
             # list of inputs/commands it should listen to
-            speccommands = ['p', 'price']
+            speccommands = ['p', 'price', 'rice']
             # let's read the message
             if message.content.casefold() in speccommands and message.channel.id in discord_channels:
  
